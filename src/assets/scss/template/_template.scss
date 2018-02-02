@@ -1,0 +1,291 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html,
+.body {
+  background-color: hsl(210, 3%, 12%) !important;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: #ffffff;
+  text-align: center;
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .wrapper-inner {
+    padding: 18px 20px 16px;
+  }
+
+  .container {
+    background: transparent;
+  }
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.first-section {
+  padding-bottom: 200px;
+  background-image: url('/assets/img/s1.dc.png');
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-bottom: 297px;
+    background-image: url('/assets/img/s1.m.png');
+  }
+}
+
+.desktop-image {
+  display: block;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    display: none;
+  }
+}
+
+.mobile-img {
+  display: none;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    display: block;
+  }
+}
+
+.heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 42px;
+
+  }
+}
+
+.section-1__text {
+  padding: 0 108px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 0;
+  }
+
+}
+
+.section-1 {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-bottom: 33px;
+  }
+
+  .heading {
+    margin-top: 29px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-top: 44px;
+
+    }
+  }
+
+  &__text {
+    line-height: 1.35;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 25px;
+      line-height: 1.2;
+      margin-bottom: 0 !important;
+
+    }
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+}
+
+.section-2 {
+  background-image: url('/assets/img/s1.dc.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    background-image: url('/assets/img/s1.m.png');
+
+    .text {
+      font-size: 25px;
+    }
+  }
+}
+
+.section-2-container {
+  padding: 50px 17px !important;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 50px 36px !important;
+  }
+}
+
+.section-3-container {
+  background-image: url('/assets/img/arr.png');
+  background-position: 72px 28px;
+  background-repeat: no-repeat;
+
+  padding: 26px 184px 20px 96px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 10px 34px 20px !important;
+
+    background-position: 2px 19px;
+    background-size: 15px;
+
+  }
+}
+
+.section-promo {
+  background-color: $white;
+  padding: 18px 0 30px;
+
+  p {
+    color: hsl(210, 3%, 15%);
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 42px;
+      color: hsl(210, 3%, 15%);
+    }
+
+    &.tips {
+      margin-bottom: 18px;
+      font-size: 10px;
+      font-weight: normal;
+      color: hsl(0, 0%, 0%);
+      line-height: 1.5;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 21px;
+        padding: 0 70px !important;
+      }
+    }
+  }
+
+  span {
+    font-size: 33px;
+    color: hsl(3, 80%, 44%);
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 54px;
+      color: hsl(3, 80%, 44%);
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  margin: 24px auto 21px;
+  padding: 10px 38px 8px;
+  border: 2px solid hsl(3, 80%, 44%);
+
+  color: hsl(0, 0%, 0%);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    border: 4px solid hsl(3, 80%, 44%);
+    font-size: 25px;
+    padding: 20px 38px;
+
+  }
+}
+
+.section-4 {
+  background-image: url('/assets/img/s2.dc.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 282px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    background-image: url('/assets/img/s2.m.png');
+  }
+}
+
+.section-4-container {
+  padding: 22px 17px !important;
+}
+
+.red-line {
+  width: 45px;
+  height: 2px;
+  margin: 16px 0 18px;
+  background-color: hsl(3, 80%, 44%);
+}
+
+.copy {
+  margin-top: 14px;
+  opacity: 0.5;
+  color: hsl(0, 0%, 100%);
+  font-size: 10px;
+  font-weight: 400;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 21px;
+  }
+}
+
+.tel {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 700;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    font-size: 25px;
+    text-align: right;
+  }
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  img {
+    width:  36px!important;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width:  62px!important;
+
+    }
+  }
+}
+
+.footer {
+
+  .wrapper-inner {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0 50px !important;
+    }
+  }
+  .container {
+    background: transparent;
+
+  }
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .text {
+    font-size: 25px;
+  }
+}
